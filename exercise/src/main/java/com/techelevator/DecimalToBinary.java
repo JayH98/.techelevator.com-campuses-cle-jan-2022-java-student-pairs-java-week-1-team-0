@@ -1,5 +1,6 @@
 package com.techelevator;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DecimalToBinary {
@@ -15,7 +16,7 @@ public class DecimalToBinary {
 			decimalValuesInInt[i] = Integer.parseInt(decimalValues[i]);
 		}
 		//int quotient = 0;
-
+		ArrayList<Integer> = new ArrayList<>();
 		for (int i = 0; i < decimalValuesInInt.length; i++) {
 			int quotient = decimalValuesInInt[i];
 			System.out.print(+decimalValuesInInt[i] + " in binary is ");
@@ -23,7 +24,7 @@ public class DecimalToBinary {
 			do {
 				int quotientRemainder = quotient % 2;
 				quotient = quotient / 2;
-				System.out.print(quotientRemainder);
+			//	System.out.print(quotientRemainder);
 			} while (quotient > 0);
 			System.out.println();
 		}
