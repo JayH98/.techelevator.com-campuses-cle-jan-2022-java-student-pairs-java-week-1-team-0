@@ -16,12 +16,12 @@ public class LinearConvert {
 
 
 		if (lengthType.equals("f")) {
-			double lengthInFeet = toMeters;
-			System.out.println("The length is " + lengthInFeet + " meters");
+			double lengthInMeters = Math.round(toMeters);
+			System.out.println(length + "f is " + lengthInMeters + "m");
 		}
 		else if (lengthType.equals("m")) {
-			double lengthInMeters = toFeet;
-			System.out.println("The length is " + lengthInMeters + " feet");
+			double lengthInFeet = Math.round(toFeet);
+			System.out.println("m is " + lengthInFeet + "f");
 		}
 		else {
 			System.out.println("Input must be m or f. Try again!");

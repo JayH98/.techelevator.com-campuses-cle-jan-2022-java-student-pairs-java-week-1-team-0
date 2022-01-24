@@ -18,12 +18,12 @@ public class TempConvert {
 
 
 		if (tempType.equals("C")) {
-			double temperatureInCelsius = toFarenheit;
-			System.out.println("The temperature is " + temperatureInCelsius + "F");
+			double temperatureInFahrenheit = toFarenheit;
+			System.out.println(temp + "C is " + temperatureInFahrenheit + "F");
 		}
 		else if (tempType.equals("F")) {
-			double temperatureInFarenheit = toCelsius;
-			System.out.println("The temperature is " + temperatureInFarenheit + "C");
+			double temperatureInCelsius = toCelsius;
+			System.out.println(temp + "F is " + temperatureInCelsius + "C");
 		}
 		else {
 			System.out.println("Input must be capital F or capital C. Try again!");
